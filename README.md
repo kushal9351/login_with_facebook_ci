@@ -62,3 +62,4 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
 # login_with_facebook_ci
 # login_with_facebook_ci
+# instaCloneCI4
