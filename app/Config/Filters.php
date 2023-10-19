@@ -2,12 +2,15 @@
 
 namespace Config;
 
+use App\Filters\IsLoginFilter;
+use App\Filters\LoggedInFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
+
 
 class Filters extends BaseConfig
 {
@@ -26,6 +29,8 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
 
         // 'authGuard' => \App\Filters\AuthGuard::class,
+        'noLogin' => IsLoginFilter::class,
+        'loggedIn' => LoggedInFilter::class,
     ];
 
     /**
